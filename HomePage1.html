@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Home Page 1</title>
+        </head>
+        <style>
+           *{
+                box-sizing: border-box;
+                /* box-sizing serve para definir/delimitar o tamanho do container */
+           }
+           body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0px;
+           }
+           .cabeçalho{
+                background-color: yellow;
+                color: blue;
+                border: 1px solid blue;
+                text-align: center;
+                padding: 20px;
+                font-size: 40px;
+           }
+           .menu {
+                text-decoration: none;
+                padding: 3px;
+                color: grey;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+           }
+           .menu a{
+                text-decoration: none;
+                color: grey;
+           }
+           .menu a:hover{
+                color: blue;
+           }
+            .conteudo1, .conteudo2, .conteudo3{
+                width:100%;
+                height: 400px;
+            }
+            .corpo{
+                display:flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            .conteudo1 img{
+                padding: 0px;
+                width: 100%;
+                height: 100%;
+            }
+            .conteudo2 h3{
+                text-align: center;
+            }
+            .conteudo2{
+                overflow: auto;
+            }
+            .rodape{
+                background-color: bisque;
+                border: 4px solid rgb(85, 66, 42);
+                padding: 10px;
+            }
+            @media only screen and (min-width: 800px) {
+                .menu{
+                flex-direction: row;
+                }
+                .conteudo1{
+                    width: 40%;
+                }
+                .conteudo2{
+                    width: 60%;
+                }
+            }
+        </style>
+        <body>
+            <div class="cabeçalho">
+                <h1>Pumpkin</h1>
+            </div>
+            <div class="menu">
+                <a href="#">Localização</a>
+                <a href="#">Missão</a>
+                <a href="#">Valor</a>
+            </div>
+            <div class="corpo">
+                <div class="conteudo1">
+                    <picture>
+                        <source srcset="https://magazine25.vteximg.com.br/arquivos/ids/225581-1250-1250/205071.png?v=637635277176270000" media="(min-width: 800px)" >
+                        <img src="pato.jpg" type="image/jpg">
+                    </picture>
+                </div>
+                <div class="conteudo2">
+                    <h3>Notícias</h3>
+                    <p>Adoção de cachorros em Mongaguá.</p>
+                    <p>Adoção de gatos em Praia Grande.</p>
+                    <p>Cacatua fuge e dono oferece recompensa a quem encontrá-la.</p>
+                    <p>Blackpink: novo álbum vem aí</p>
+                    <p>Crimes eleitorais: saiba mais</p>
+                    <p>Ratos invadem Inglaterra</p>
+                    <p>Como incrementar seu currículo</p>
+                    <p>Ranking melhores faculdades da América Latina</p>
+                    <p>Adoção de cachorros em Mongaguá.</p>
+                    <p>Adoção de gatos em Praia Grande.</p>
+                    <p>Cacatua fugiu e dono oferece recompensa a quem encontrá-la.</p>
+                    <p>Blackpink: Novo álbum vem aí</p>
+                    <p>Crimes eleitorais: saiba mais</p>
+                    <p>Ratos invadem Inglaterra</p>
+                    <p>Como incrementar seu currículo</p>
+                    <p>Ranking melhores faculdades da América Latina</p>
+                </div>
+                <div class="conteudo3">
+                    <video width="400px" height="400px" controls="controls" autoplay="autoplay">
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="rodape">
+                <p>Telefone para contato: (13) 91515-1515</p>
+                <p>Endereço: Rua Bergamota, 40485 - Bom Retiro, São Paulo</p>
+            </div>
+        </body>
+    </html>
